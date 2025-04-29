@@ -1,12 +1,14 @@
-The codes will be pushed here 
+#  Basics
 
+This folder contains a set of small C++ example programs to introduce you to the core language features: syntax, data types, control flow.
 
-#Make sure the repo has been cloned in  your  device . 
+## Getting Started
 
-#To ensure you are in  main branch 
+Before you dive in, make sure you have this repo cloned on your machine and are working on the `main` branch:
 
+```bash
+# 1. To switch and ensure you are in main branch
 git checkout main
 
-#Pull files from main
-
- git pull origin main  
+# 2. Pull down the latest changes
+git pull origin main
