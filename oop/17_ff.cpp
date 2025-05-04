@@ -14,7 +14,7 @@ public:
     }
 
     // Friend function declaration
-    friend int transfer(account2 acc2, account1 acc1, int amount);
+    friend int transfer(account2 , account1 , int amount);
 };
 
 class account1 {
@@ -28,7 +28,7 @@ public:
     }
 
     // Friend function declaration
-    friend int transfer(account2 acc2, account1 acc1, int amount);
+    friend int transfer(account2 , account1 , int amount);
 };
 
 // Friend function definition

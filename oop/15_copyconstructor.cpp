@@ -12,7 +12,7 @@ public:
         roll = r;
     }
 
-    // Copy constructor
+     //Copy constructor
     Student(const Student &s) {
         name = s.name;
         roll = s.roll;

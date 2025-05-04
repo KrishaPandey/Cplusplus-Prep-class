@@ -21,7 +21,7 @@ class C : public A, public B {
 
 int main() {
     C obj;
-    obj.display(); // ? Compiler error: ambiguous
+    obj.A::display(); // ? Compiler error: ambiguous
     return 0;
 }
   

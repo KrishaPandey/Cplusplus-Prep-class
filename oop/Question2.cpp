@@ -15,7 +15,7 @@ public:
     }
 
     // Friend function declaration
-    friend void compareVolume(BoxA, BoxB);
+    friend void compareVolume(BoxA a, BoxB b);
 };
 
 class BoxB {
@@ -30,7 +30,7 @@ public:
     }
 
     // Friend function declaration
-    friend void compareVolume(BoxA, BoxB);
+    friend void compareVolume(BoxA a, BoxB b);
 };
 
 // Friend function definition
@@ -54,7 +54,7 @@ int main() {
     BoxB b;
 
     a.setDimensions(10, 5, 2); // 100
-    b.setDimensions(4, 5, 5);  // 100
+    b.setDimensions(4, 5, 10);  // 100
 
     compareVolume(a, b);
 
