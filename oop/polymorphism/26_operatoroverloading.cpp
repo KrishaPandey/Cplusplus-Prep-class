@@ -13,7 +13,7 @@ public:
 	}
 
     
-    Complex operator + (const Complex& other) {
+    Complex operator +(const Complex& other) {
         return Complex(real + other.real, imag + other.imag);
     }
 
@@ -24,11 +24,12 @@ public:
 
 int main() {
     Complex c1(3.4, 5.6);  
-    Complex c2(1.1, 2.2);  
+    Complex c2(1.1, 2.2); 
+	 Complex c3(1.1, 2.2);  
 
-    Complex c3 = c1 + c2;  
+    Complex c4 = c1 +c3;  
 
-    c3.display();  
+    c4.display();  
 
     return 0;
 }

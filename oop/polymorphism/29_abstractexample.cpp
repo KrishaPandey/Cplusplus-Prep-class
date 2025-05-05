@@ -27,6 +27,8 @@ public:
 
 int main() {
     Payment* p;
+    CreditCardPayment cp;
+    CashPayment cap;
 
     int choice;
     float amount;
@@ -38,13 +40,12 @@ int main() {
     cin >> choice;
 
     if (choice == 1)
-        p = new CreditCardPayment();
+        p =  &cp;
     else
-        p = new CashPayment();
+        p = &cap;
 
     p->pay(amount);  // Abstracted call — we don't know what pay() actually does
 
-    delete p;
     return 0;
 }
 
